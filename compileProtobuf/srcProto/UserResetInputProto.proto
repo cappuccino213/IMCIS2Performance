@@ -1,0 +1,8 @@
+syntax = "proto3"; 
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+
+message UserResetInputProto{
+string userUID=1;
+string account=2;
+string organizationID=3;
+}

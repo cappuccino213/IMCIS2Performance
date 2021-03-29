@@ -1,0 +1,7 @@
+syntax = "proto3"; 
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto"; 
+
+message PrintInputProto{
+string examUID=1;
+string accessionNumber=2;
+}

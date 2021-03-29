@@ -1,0 +1,9 @@
+syntax = "proto3";
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+
+
+message GetPatientInputProto{
+string accessionNumber=1 ;//检查号
+string organizationID=2;//机构id
+string examToken=3;//检查token
+ }

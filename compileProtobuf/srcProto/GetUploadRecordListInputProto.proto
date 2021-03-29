@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+//获取记录
+message  GetUploadRecordListInputProto{
+    int32 currentPage=1;
+    int32 pageSize=2;
+    string date=3;     
+	int32 type=4;       //0=全部,1=检查，2=报告，3=胶片，4影像
+	string organizationID=5;       //机构id
+}
+
+//获取记录
+message  GetUploadRecordListOutputProto{
+    string uploadUID=1;    //机构id
+    int32 type=2;              //类型    0=检查，1=报告，2=胶片，3影像
+    string createTime=3;       //时间
+    string organizationName=4 ; //机构名称
+	string typeName=5; //类型名称
+}

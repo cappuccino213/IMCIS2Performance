@@ -1,0 +1,30 @@
+syntax = "proto3";
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+
+message TokenMsgOutputProto{
+string token=1;
+}
+
+message AdminLoginInputProto{
+string account=1;
+string password=2;
+string organizationID=3;
+string rememberMe=4;
+string workNO=5;
+int32 loginType =6; 
+int32 userAgent =7;
+int32 userType =8;
+string key =9;
+string code =10;
+}
+
+
+message PatientLoginInputProto{
+
+string phoneNumber=1;//手机号码
+int32 loginType =2;  //0 普通账号  1= 手机号登录 2=身份证后6位登录
+string validCode=3 ;//  手机验证码 或者 身份证后6位
+string accessionNumber=4 ;//检查号
+string  examToken=5; //分享时用户token
+string organizationID=6;//机构id
+ }

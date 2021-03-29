@@ -1,0 +1,25 @@
+syntax = "proto3";
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+import "UserOrgInfoProto.Proto";
+
+message PersonalCheckRcdInputProto{
+string patientMasterID=1;
+string personExamUID=2;
+int32 pageSize=3;
+int32 currentPage=4;
+string token=5;
+string isInteragency =6;
+string isInteragencyExam =7;
+string isInteragencyClinic =8;
+string isInteragencyStatistic =9;
+UserOrgInfoProto userInfo =10;
+string isInteragencyData =11;
+string examUID =12;
+string applyMethod =13;
+string isInterconnectData=14; 
+string examToken=15; 
+string accessionNumber=16; 
+string organizationID=17;
+string iDCardNo=18;
+string insuranceID=19;
+}

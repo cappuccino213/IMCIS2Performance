@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+//获取记录
+message  GetOperateRecordListOutputProto{
+   string operateRecordUID=1;    //id
+   string organizationID=2;    //机构id
+   string requestURL= 3 ;    //访问地址
+   string createTime= 4 ;    //时间
+   string organizationName=5;    //机构名称
+   
+}

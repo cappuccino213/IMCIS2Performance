@@ -1,0 +1,7 @@
+syntax = "proto3";
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+
+message PluginServiceManaProto{
+string pluginType=1;
+string ifEnable=2;
+}

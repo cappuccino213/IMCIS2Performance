@@ -1,0 +1,14 @@
+syntax = "proto3"; 
+option csharp_namespace = "TomTaw.eWordIMCIS.WebAPI.Models"; 
+
+message ShareExamInputProto{
+string accessionNumber=1;
+string  organizationID=2;
+int32 expireMin=3; //过期分钟数
+bool relatedAuth=4;
+}
+
+
+message ShareExamOutputProto{
+string examToken=1;
+}

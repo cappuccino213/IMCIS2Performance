@@ -1,0 +1,11 @@
+syntax = "proto3"; 
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto"; 
+
+
+//Token服务配置信息
+message TokenInfoProto {
+ string tokenServer =1; //Token服务地址
+ string accessToken =2; //是否开启验证
+ string organizationID =3; //产品所在机构
+}
+

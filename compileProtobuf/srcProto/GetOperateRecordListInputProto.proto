@@ -1,0 +1,9 @@
+syntax = "proto3";
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+//获取记录
+message  GetOperateRecordListInputProto{
+   string organizationID=1;    //机构id
+   int32 currentPage=2;
+    int32 pageSize=3;
+	string date=4;
+}

@@ -1,0 +1,24 @@
+
+syntax = "proto3";
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+
+
+message GetPatientOutputProto{
+string patientName=1; //患者姓名
+string sex=2;  //性别
+string age=3;  //年龄
+string ageUnit=4;  //年龄单位 
+string procedureName=5;//部位
+string examDate=6; //检查时间 
+string accessionNumber=7; //检查号
+string examItem=8; //部位   前端强烈需要
+bool hasImage=9;//是否有影像
+bool hasResult=10 ;// 是否有报告
+bool hasFilm=11;//是否有胶片
+string imagingFinding=12;//影像所见
+string imagingDiagnosis=13;//影像诊断
+string serviceSectID=14;//检查类型
+string organizationName=15;//机构名称
+string organizationID=16;//机构id
+bool relatedAuth=17;//相关检查授权
+}

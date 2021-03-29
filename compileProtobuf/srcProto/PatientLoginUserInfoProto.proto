@@ -1,0 +1,12 @@
+syntax = "proto3"; 
+option csharp_namespace = "TomTaw.eWordIMCIS.WebAPI.Models"; 
+
+message PatientLoginUserInfoProto{
+string patientName=1;
+string sex=2;
+string age=3;
+string ageUnit=4;
+string procedureName=5;
+string examDate=6;
+string accessionNumber=7;
+}

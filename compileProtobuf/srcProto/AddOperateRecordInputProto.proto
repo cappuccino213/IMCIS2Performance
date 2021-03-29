@@ -1,0 +1,8 @@
+syntax = "proto3";
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+// 插入记录
+message  AddOperateRecordInputProto{
+   string organizationID=1;    //用户名
+   string requestURL= 2 ;    //登录名
+}
+

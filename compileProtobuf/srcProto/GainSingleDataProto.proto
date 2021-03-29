@@ -1,0 +1,25 @@
+syntax = "proto3"; 
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto"; 
+
+
+//单条检查的采集入参
+message GainSingleDataProto {
+ string accessionNumber =1; //检查号
+ string serviceUID =2; //插件服务UID
+}
+
+//重采已经删除文件入参
+message GainFileDataProto {
+ string accessionNumber =1; //检查号
+ string examUID =2; //检查UID
+ int32  downloadType =3; //下载方式 0：本院  1：云端
+}
+
+
+//重置文件的采集状态
+message ResetBusinessStatusProto {
+ string accessionNumber =1; //检查号
+ string examUID =2; //检查UID
+ int32  fileType =3; // 0:全部重采 8：报告  16：影像  32:胶片
+}
+

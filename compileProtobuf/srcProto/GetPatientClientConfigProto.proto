@@ -1,0 +1,10 @@
+syntax = "proto3"; 
+option csharp_namespace = "TomTaw.eWordIMCIS.WebAPI.Models"; 
+
+message GetPatientClientConfigInputProto{
+
+  string organizationID=1;//»ú¹¹id
+   
+}
+
+

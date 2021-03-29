@@ -1,0 +1,48 @@
+syntax = "proto3";
+option csharp_namespace = "TomTaw.eWordIMCIS.Proto";
+
+message PluginProto{
+string pluginUID=1;
+string pluginName=2;
+string dllName=3;
+string className=4;
+string description=5;
+string pluginType=6;
+string pluginConfigs=7;
+string defaultKeyValue=8;
+string pluginFunction=9;
+string pluginRule=10;
+string configVersion=11; //配置版本  1.0 2.0
+bool ifSupportCheck=12 ;//是否支持自检
+bool isShow=13 ;//是否显示
+}
+
+
+message PluginServiceMapProto {
+ string serviceUID =1;
+ string pluginUID =2;
+ bool ifEnable =3;
+ bool ifDelete =4;
+ string pluginName =5;
+ string pluginConfigValues =6;
+ string pluginConfigKeyValue =7;
+ int32 triggerInternal =8;
+ string ifTriggerByTime =9;
+ string triggerTime =10;
+ string ifTriggerByDay =11;
+ string triggerDayOfWeek =12;
+ string ifTriggerByDate =13;
+ string triggerBeginDate =14;
+ string triggerEndDate =15;
+ string triggerBeginTime =16;
+ string triggerEndTime =17;
+ int32 triggerTimes =18;
+ string taskFieldValue =19;
+ string pluginRule=20;
+ string configVersion=21; //配置版本
+ string pluginServiceMapUID=22; 
+ bool ifSupportCheck=23 ;//是否支持自检
+}
+
+
+

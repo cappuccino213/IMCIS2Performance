@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace =  "TomTaw.eWordIMCIS.Proto";
+
+message SendPathientPhoneCodeInput
+{
+   string phoneNumber=1;// 手机号码
+   string accessionNumber=2;// 检查号
+   string organizationID=3;//机构id
+}
+
+message SendPathientPhoneCodeOutput
+{
+   string validCode=1;// 验证码
+  
+}
